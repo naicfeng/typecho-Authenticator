@@ -23,6 +23,9 @@ include 'header.php';
                 <button type="submit" class="btn btn-l w-100 primary"><?php _e('登录'); ?></button>
                 <input type="hidden" name="referer" value="<?php echo htmlspecialchars($request->get('referer')); ?>" />
             </p>
+            <p>
+                <label for="remember"><input type="checkbox" name="remember" class="checkbox" value="1" id="remember" checked /> <?php _e('记住本机 (一个月内免验证)'); ?></label>
+            </p>
         </form>
         
         <p class="more-link">

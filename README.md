@@ -1,5 +1,5 @@
 ## 本版特点
-相对于0.0.1版，0.0.2版的验证逻辑**全部更新**，推荐升级！
+相对于0.0.1版，0.0.3版的验证逻辑**全部更新**，推荐升级！
 
 支持验证态保持，一次登录后，在session或cookie有效期内无需再次验证
 
@@ -7,7 +7,15 @@
 
 废弃0.0.1使用的插入点`header`，直接采用`common`插入
 
-<!--more-->
+#### 兼容所有符合 [RFC6238](https://tools.ietf.org/html/rfc6238 "rfc6238") 规范的软件
+- Microsoft Authenticator
+- Google Authenticator
+- 1Password
+- Authy
+- KeePass
+- LastPass
+- ...
+
 ## 更新说明
 + 支持typecho最新版
 + 流程优化,符合大多数网站逻辑

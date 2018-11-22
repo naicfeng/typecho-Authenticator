@@ -20,6 +20,7 @@ class GAuthenticator_Action extends Typecho_Widget implements Widget_Interface_D
 	public function auth(){
 		if(intval($this->request->get('otp'))>0){
 			//获取到CODE
+			if (isset($_SESSION['GAuthenticator'])&&$_SESSION['GAuthenticator']) return;//如果SESSION匹配则直接返回
 			$config = Helper::options()->plugin('GAuthenticator');
 			require_once 'GoogleAuthenticator.php';
 			$referer = $this->request->getReferer();

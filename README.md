@@ -20,6 +20,9 @@
 ![验证界面截图.png](https://static.cuojue.org/usr/uploads/2018/11/86736268.png)
 
 ## 更新说明
+#### 0.0.5
+- [fix] 修复启用插件500错误，改为使用jQuery获取SecretKey显示二维码
+
 #### 0.0.4
 - [add] 支持后台直接显示二维码
 - [fix] 修改为使用联图API显示二维码
